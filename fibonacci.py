@@ -12,7 +12,7 @@ def nao_entre_em_panico():
     i = 0
     resposta = '1, '
 
-    while(i < 50):
+    while(i <= 50):
         proximo = proximo + anterior
         anterior = proximo - anterior
         i += 1
