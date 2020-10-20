@@ -1,4 +1,4 @@
 FROM python:3.6.1-alpine
 RUN pip install flask
-COPY app.py /app.py
+COPY fibonacci.py /fibonacci.py
 CMD ["python","app.py"]
