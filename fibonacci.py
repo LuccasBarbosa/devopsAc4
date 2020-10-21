@@ -8,9 +8,9 @@ app = Flask(__name__)
 @app.route('/')
 def nao_entre_em_panico():
     anterior = 0
-    proximo = 1
+    proximo = 0
     i = 0
-    resposta = '1, '
+    resposta = '0, '
 
     while(i < 50):
         proximo = proximo + anterior
@@ -20,8 +20,7 @@ def nao_entre_em_panico():
         if(proximo == 0):
             proximo = proximo + 1    
 
-        resposta+= str(proximo) + ", "
-
+        resposta += str(proximo) + ", "
 
     return resposta
 
